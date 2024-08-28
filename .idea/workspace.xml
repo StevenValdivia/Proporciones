@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb829c8-7282-41c6-a0f0-f855d7469d77" name="Changes" comment="" />
+    <list default="true" id="8eb829c8-7282-41c6-a0f0-f855d7469d77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionCarlosUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -26,21 +25,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CalcularMedida.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Proporcion.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CalcularMedida.executor": "Debug",
+    "Application.Proporcion.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "carlos",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Proporciones",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.usecase" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CalcularMedida" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.CalcularMedida" />
@@ -80,6 +86,7 @@
       <workItem from="1724436079521" duration="7748000" />
       <workItem from="1724778732430" duration="11674000" />
       <workItem from="1724859636699" duration="5019000" />
+      <workItem from="1724874892738" duration="1421000" />
     </task>
     <servers />
   </component>
