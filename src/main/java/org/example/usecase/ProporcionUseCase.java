@@ -6,15 +6,14 @@ public class ProporcionUseCase implements ProporcionUseCaseInput{
 
     @Override
     public ProporcionResponse calcular(ProporcionRequest request) {
-        Proporcion proporcion = new Proporcion();
 
-        int[] medidas = proporcion.asegurarProporcion(request.getTotal());
+        int[] medidas = asegurarProporcion(request.getTotal());
         int medida1 = medidas[0];
         int medida2 = medidas[1];
 
-        int valorAjustado = proporcion.calcularValorAjustado(request.getSeparador());
+        int valorAjustado = calcularValorAjustado(request.getSeparador());
 
-        int[] espacios = proporcion.calcularEspacios(medida1, medida2, valorAjustado);
+        int[] espacios = calcularEspacios(medida1, medida2, valorAjustado);
         int espacio1 = espacios[0];
         int espacio2 = espacios[1];
 
@@ -26,5 +25,21 @@ public class ProporcionUseCase implements ProporcionUseCaseInput{
         response.setEspacios(valorAjustado);
 
         return response;
+    }
+
+    public int[] asegurarProporcion(int total) {
+        int medida2 = total / 3;
+        int medida1 = medida2 * 2;
+        return new int[]{medida1, medida2};
+    }
+
+    public int calcularValorAjustado(int separador) {
+        return (separador * 3) / 2;
+    }
+
+    public int[] calcularEspacios(int medida1, int medida2, int valorAjustado) {
+        int espacio1 = medida1 - valorAjustado;
+        int espacio2 = medida2 - valorAjustado;
+        return new int[]{espacio1, espacio2};
     }
 }
