@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb829c8-7282-41c6-a0f0-f855d7469d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/view/ProporcionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CalcularMedida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CalcularMedida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adapter/presenter/ProporcionPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adapter/presenter/ProporcionPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/ProporcionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/database/ProporcionRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionEydanUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionEydanUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/database/ProporcionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/database/ProporcionRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,38 +32,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CalcularMedida.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Proporcion.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Proporciones&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CalcularMedida.executor": "Run",
+    "Application.Proporcion.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "steven2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Proporciones",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.usecase" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CalcularMedida" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CalcularMedida" />
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
       <module name="proporciones" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.infrastructure.*" />
+          <option name="PATTERN" value="org.example.infrastructure.configuration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +99,7 @@
       <workItem from="1724859636699" duration="5019000" />
       <workItem from="1724874892738" duration="1421000" />
       <workItem from="1724878794812" duration="41011000" />
-      <workItem from="1725047493767" duration="396000" />
+      <workItem from="1725047493767" duration="1936000" />
     </task>
     <servers />
   </component>

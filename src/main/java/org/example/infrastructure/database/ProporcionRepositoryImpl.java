@@ -10,6 +10,7 @@ public class ProporcionRepositoryImpl implements ProporcionRepository
     @Override
     public Proporcion save(Proporcion proporcion)
     {
+
         return proporcion;
     }
 }
