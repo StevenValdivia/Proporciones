@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb829c8-7282-41c6-a0f0-f855d7469d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionCarlosUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/ProporcionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CalcularMedida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CalcularMedida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adapter/controller/ProporcionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/adapter/presenter/ProporcionPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/adapter/presenter/ProporcionPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Proporcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Proporcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcioEydanUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionEydanUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionCarlosUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCaseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCaseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCaseOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionUseCaseOutput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,7 +47,7 @@
     "Application.Proporcion.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "carlos",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Proporciones",
     "node.js.detected.package.eslint": "true",
@@ -87,6 +103,7 @@
       <workItem from="1724778732430" duration="11674000" />
       <workItem from="1724859636699" duration="5019000" />
       <workItem from="1724874892738" duration="1421000" />
+      <workItem from="1724878794812" duration="30945000" />
     </task>
     <servers />
   </component>

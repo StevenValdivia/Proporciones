@@ -1,14 +1,17 @@
 package org.example.adapter.controller;
 
-import org.example.usecase.ProporcionCarlosUseCase;
 import org.example.usecase.ProporcionRequest;
-import org.example.usecase.ProporcionResponse;
+import org.example.usecase.ProporcionUseCaseInput;
 
-public class ProporcionController
-{
-    public ProporcionResponse calcular(ProporcionRequest request)
-    {
-        ProporcionCarlosUseCase proporcionUseCase = new ProporcionCarlosUseCase();
-        return proporcionUseCase.calcular(request);
+public class ProporcionController {
+
+    private ProporcionUseCaseInput proporcionUseCaseInput;
+
+    public ProporcionController (ProporcionUseCaseInput proporcionUseCaseInput) {
+        this.proporcionUseCaseInput = proporcionUseCaseInput;
+    }
+
+    public void calcular(ProporcionRequest request) {
+        proporcionUseCaseInput.calcular(request);
     }
 }

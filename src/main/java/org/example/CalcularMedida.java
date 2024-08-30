@@ -2,12 +2,13 @@ package org.example;
 
 import org.example.adapter.presenter.ProporcionPresenter;
 import org.example.adapter.presenter.ProporcionViewModel;
+import org.example.domain.Proporcion;
+import org.example.infrastructure.ProporcionRepositoryImpl;
+import org.example.usecase.ProporcionEydanUseCase;
+import org.example.usecase.ProporcionRepository;
 import org.example.usecase.ProporcionRequest;
-import org.example.usecase.ProporcionResponse;
 import org.example.adapter.controller.ProporcionController;
-import org.example.usecase.ProporcionUseCase;
 import org.example.usecase.ProporcionUseCaseInput;
-
 import java.util.Scanner;
 
 public class CalcularMedida {
@@ -27,18 +28,16 @@ public class CalcularMedida {
         System.out.print("Ingresa el valor del separador: ");
         request.setSeparador(scanner.nextInt());
 
-        //ProporcionUseCase useCase = new ProporcionUseCase();
-        //ProporcionResponse response = useCase.calcular(request);
-        ProporcionUseCaseInput useCase = new ProporcionUseCase();
-        ProporcionController proporcionController = new ProporcionController();
-        //proporcionController.setProporcionUseCaseInput(useCase);
+        ProporcionRepository proporcionRepository = new ProporcionRepositoryImpl();
 
+        ProporcionPresenter proporcionPresenter = new ProporcionPresenter();
+        ProporcionUseCaseInput useCase = new ProporcionEydanUseCase(proporcionPresenter, proporcionRepository);
 
-        //ProporcionPresenter proporcionPresenter = new ProporcionPresenter();
-        //proporcionPresenter.present()
-        ProporcionResponse response = proporcionController.calcular(request);
-        ProporcionPresenter proporcionPresenter1 = new ProporcionPresenter();
-        ProporcionViewModel viewModel = proporcionPresenter1.present(response);
+        ProporcionController proporcionController = new ProporcionController(useCase);
+        proporcionController.calcular(request);
+
+        ProporcionViewModel viewModel = proporcionPresenter.getViewModel();
+
 
 
         System.out.println("Resultados:");

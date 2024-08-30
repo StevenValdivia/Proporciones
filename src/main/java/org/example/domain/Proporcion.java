@@ -1,20 +1,56 @@
 package org.example.domain;
 
 public class Proporcion {
+    private int total;
+    private int medida1;
+    private int medida2;
+    private int separador;
 
-    public int[] asegurarProporcion(int total) {
-        int medida2 = total / 3;
-        int medida1 = medida2 * 2;
-        return new int[]{medida1, medida2};
+    public int getTotal()
+    {
+        return total;
     }
 
-    public int calcularValorAjustado(int separador) {
-        return (separador * 3) / 2;
+    public void setTotal(int total)
+    {
+        this.total = total;
     }
 
-    public int[] calcularEspacios(int medida1, int medida2, int valorAjustado) {
-        int espacio1 = medida1 - valorAjustado;
-        int espacio2 = medida2 - valorAjustado;
-        return new int[]{espacio1, espacio2};
+    public int getMedida1()
+    {
+        return medida1;
+    }
+
+    public void setMedida1(int medida1)
+    {
+        this.medida1 = medida1;
+    }
+
+    public int getMedida2()
+    {
+        return medida2;
+    }
+
+    public void setMedida2(int medida2)
+    {
+        this.medida2 = medida2;
+    }
+
+    public int getSeparador()
+    {
+        return separador;
+    }
+
+    public void setSeparador(int separador)
+    {
+        this.separador = separador;
+    }
+
+    public int calcularPrimeraDistancia(int medida1, int separador) {
+        return medida1 - (separador * 3 / 2);
+    }
+
+    public int calcularSegundaDistancia(int medidaTotal, int medida1, int separador) {
+        return medidaTotal - medida1 - (separador * 3 / 2);
     }
 }
