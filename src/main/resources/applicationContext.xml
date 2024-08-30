@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Definir un bean con el ID 'miBean'
+    <bean id="proporcionRepository" class="org.example.infrastructure.database.ProporcionRepositoryImpl">
+    </bean>
+    <bean id="proporcionPresenter" class="org.example.adapter.presenter.ProporcionPresenter">
+    </bean>
+    <bean id="useCase" class="org.example.usecase.ProporcionUseCase">
+        <constructor-arg ref="proporcionPresenter"/>
+        <constructor-arg ref="proporcionRepository"/>
+    </bean>
+    <bean id="proporcionController" class="org.example.adapter.controller.ProporcionController">
+        <constructor-arg ref="useCase"/>
+    </bean> -->
+</beans>

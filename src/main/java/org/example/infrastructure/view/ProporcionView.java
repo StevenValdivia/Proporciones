@@ -1,18 +1,31 @@
-package org.example;
+package org.example.infrastructure.view;
 
 import org.example.adapter.presenter.ProporcionPresenter;
 import org.example.adapter.presenter.ProporcionViewModel;
-import org.example.domain.Proporcion;
-import org.example.infrastructure.ProporcionRepositoryImpl;
-import org.example.usecase.ProporcionEydanUseCase;
 import org.example.usecase.ProporcionRepository;
 import org.example.usecase.ProporcionRequest;
 import org.example.adapter.controller.ProporcionController;
 import org.example.usecase.ProporcionUseCaseInput;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import java.util.Scanner;
 
-public class CalcularMedida {
-    public static void main(String[] args) {
+@Component
+public class ProporcionView {
+
+    @Autowired
+    private ProporcionRepository proporcionRepository;
+
+    @Autowired
+    private ProporcionPresenter proporcionPresenter;
+
+    @Autowired
+    private ProporcionUseCaseInput proporcionUseCaseInput;
+
+    @Autowired
+    private ProporcionController proporcionController;
+
+    public void view() {
         Scanner scanner = new Scanner(System.in);
         ProporcionRequest request = new ProporcionRequest();
 
@@ -28,17 +41,9 @@ public class CalcularMedida {
         System.out.print("Ingresa el valor del separador: ");
         request.setSeparador(scanner.nextInt());
 
-        ProporcionRepository proporcionRepository = new ProporcionRepositoryImpl();
-
-        ProporcionPresenter proporcionPresenter = new ProporcionPresenter();
-        ProporcionUseCaseInput useCase = new ProporcionEydanUseCase(proporcionPresenter, proporcionRepository);
-
-        ProporcionController proporcionController = new ProporcionController(useCase);
         proporcionController.calcular(request);
 
         ProporcionViewModel viewModel = proporcionPresenter.getViewModel();
-
-
 
         System.out.println("Resultados:");
         System.out.println("Total: " + viewModel.getTotal());

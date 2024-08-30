@@ -1,17 +1,17 @@
 package org.example.usecase;
 
 import org.example.domain.Proporcion;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class ProporcionEydanUseCase implements ProporcionUseCaseInput{
+@Service
+public class ProporcionUseCase implements ProporcionUseCaseInput{
 
+    @Autowired
     private ProporcionUseCaseOutput proporcionUseCaseOutput;
 
+    @Autowired
     private  ProporcionRepository proporcionRepository;
-
-    public ProporcionEydanUseCase  (ProporcionUseCaseOutput proporcionUseCaseOutput, ProporcionRepository proporcionRepository){
-        this.proporcionUseCaseOutput = proporcionUseCaseOutput;
-        this.proporcionRepository = proporcionRepository;
-    }
 
     @Override
     public void calcular(ProporcionRequest request) {
@@ -28,6 +28,6 @@ public class ProporcionEydanUseCase implements ProporcionUseCaseInput{
         response.setMedida2(proporcion.calcularSegundaDistancia(request.getTotal(), request.getMedida1(), request.getSeparador()));
         response.setSeparador(request.getSeparador());
         response.setEspacios(request.getSeparador());
-        proporcionUseCaseOutput.crearViewModel(response);
+        proporcionUseCaseOutput.present(response);
     }
 }
