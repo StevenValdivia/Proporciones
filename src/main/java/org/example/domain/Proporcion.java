@@ -1,6 +1,9 @@
 package org.example.domain;
 
 public class Proporcion {
+
+    private Long id;
+
     private int total;
     private int medida1;
     private int medida2;

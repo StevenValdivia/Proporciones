@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb829c8-7282-41c6-a0f0-f855d7469d77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Proporcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Proporcion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/database/ProporcionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/database/ProporcionRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/view/ProporcionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infrastructure/view/ProporcionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/usecase/ProporcionRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,6 +56,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.usecase" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.usecase" />
     </key>
@@ -99,11 +105,18 @@
       <workItem from="1724859636699" duration="5019000" />
       <workItem from="1724874892738" duration="1421000" />
       <workItem from="1724878794812" duration="41011000" />
-      <workItem from="1725047493767" duration="1936000" />
+      <workItem from="1725047493767" duration="6958000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="proporcion.total" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

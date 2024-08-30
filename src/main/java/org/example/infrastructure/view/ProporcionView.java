@@ -2,12 +2,14 @@ package org.example.infrastructure.view;
 
 import org.example.adapter.presenter.ProporcionPresenter;
 import org.example.adapter.presenter.ProporcionViewModel;
+import org.example.domain.Proporcion;
 import org.example.usecase.ProporcionRepository;
 import org.example.usecase.ProporcionRequest;
 import org.example.adapter.controller.ProporcionController;
 import org.example.usecase.ProporcionUseCaseInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import java.util.List;
 import java.util.Scanner;
 
 @Component
@@ -41,6 +43,9 @@ public class ProporcionView {
         System.out.print("Ingresa el valor del separador: ");
         request.setSeparador(scanner.nextInt());
 
+        // Recupera todas las proporciones usando el método getAll
+
+
         proporcionController.calcular(request);
 
         ProporcionViewModel viewModel = proporcionPresenter.getViewModel();
@@ -54,6 +59,16 @@ public class ProporcionView {
         System.out.println("Espacio 1 (medida1 - valorAjustado): " + (viewModel.getMedida1()));
         System.out.println("Espacio 2 (medida2 - valorAjustado): " + (viewModel.getMedida2()));
 
+        List<Proporcion> proporcionList = proporcionRepository.getAll();
+
+        // Imprime los resultados
+        for (Proporcion proporcion : proporcionList) {
+            System.out.println("Total: " + proporcion.getTotal()
+                    + ", Medida1: " + proporcion.getMedida1()
+                    + ", Medida2: " + proporcion.getMedida2()
+                    + ", Separador: " + proporcion.getSeparador());
+
         scanner.close();
     }
+}
 }
