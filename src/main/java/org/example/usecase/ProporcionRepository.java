@@ -7,4 +7,5 @@ public interface ProporcionRepository
 {
     Proporcion save(Proporcion proporcion);
     List<Proporcion> getAll();
+    Proporcion getProporcionById(int id);
 }
